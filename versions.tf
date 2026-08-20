@@ -13,4 +13,7 @@ terraform {
   }
 }
 
-# provider blocck
+# provider block
+provider "aws" {
+  region = "us-east-2"
+}
