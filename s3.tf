@@ -5,7 +5,7 @@ resource "random_string" "random" {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "krutarth-tf-bucket-${random_string.result}"
+  bucket = "krutarth-tf-bucket-${random_string.random.result}"
 
   tags = {
     Name = "My Bucket"
